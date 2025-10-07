@@ -3,6 +3,7 @@ select Email from person
 group by Email
 having count(Email) > 1;
 
+
 -- Method-2: Join
 select distinct a.email as Email
 from Person a

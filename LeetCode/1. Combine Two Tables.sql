@@ -2,10 +2,10 @@
 select firstName, lastName, city, state
 from Person p
 left join Address a
-on p.personId = a.personId
+on p.personId = a.personId;
 
 
 -- Method-2: Left Join - using (Best)
 select p.firstName, p.lastName, a.city, a.state
 from Person p
-left join Address a using (personId)
+left join Address a using (personId);
